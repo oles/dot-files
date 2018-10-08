@@ -1,0 +1,17 @@
+/*
+
+
+!.gitignore
+!.gitconfig
+
+!.bashrc
+!.bash_aliases
+!.profile
+
+!.ssh/
+.ssh/*
+!.ssh/config
+
+!.local/
+.local/*
+!.local/bin/
