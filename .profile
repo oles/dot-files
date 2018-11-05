@@ -11,6 +11,10 @@ export EDITOR=nano
 export QT_AUTO_SCREEN_SCALE_FACTOR=0
 
 
-# custom appends for $PATH
-PATH="$HOME/.node_modules/bin:$PATH"
+# adds local bins to $PATH
 PATH="$HOME/.local/bin:$PATH"
+
+
+# makes `npm install --global` install for current user
+PATH="$HOME/.node_modules/bin:$PATH"
+export npm_config_prefix=~/.node_modules
