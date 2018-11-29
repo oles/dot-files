@@ -4,9 +4,10 @@
 !.gitignore
 !.gitconfig
 
-!.bashrc
-!.bash_aliases
 !.profile
+
+!.bashrc
+!.bash/
 
 !.ssh/
 .ssh/*
