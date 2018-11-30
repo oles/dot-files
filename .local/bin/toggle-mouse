@@ -1,8 +1,0 @@
-#!/bin/bash
-
-if pgrep -x "hide-mouse" > /dev/null
-then
-    killall hide-mouse
-else
-    hide-mouse &
-fi
