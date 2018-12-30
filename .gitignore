@@ -5,8 +5,8 @@
 !.gitconfig
 
 !.profile
-
 !.bashrc
+!.bash_login
 !.bash/
 
 !.ssh/
