@@ -16,3 +16,7 @@
 !.local/
 .local/*
 !.local/bin/
+
+!.audacity-data/
+.audacity-data/*
+!.audacity-data/audacity.cfg
