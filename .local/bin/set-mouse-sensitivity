@@ -6,6 +6,7 @@
 
 
 G400='Logitech Gaming Mouse G400'
+MX518='Logitech MX518 Gaming Mouse'
 
 
 function has-device {
@@ -16,4 +17,9 @@ function has-device {
 
 if has-device "$G400"; then
     xinput --set-prop "$G400" 'libinput Accel Speed' -0.825
+fi
+
+
+if has-device "$MX518"; then
+    xinput --set-prop "$MX518" 'libinput Accel Speed' -0.6875
 fi
