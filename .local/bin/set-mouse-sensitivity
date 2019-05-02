@@ -1,3 +1,19 @@
 #!/bin/bash
 
-xinput --set-prop 'Logitech Gaming Mouse G400' 'libinput Accel Speed' -0.825
+# tries to match Windows 7-10 pointer speed, when configured with these settings:
+# - Select a pointer speed: middle setting / 6th step of the 11 steps
+# - Enhance pointer precision: disabled
+
+
+G400='Logitech Gaming Mouse G400'
+
+
+function has-device {
+    xinput --list | grep --silent "$1"
+}
+
+
+
+if has-device "$G400"; then
+    xinput --set-prop "$G400" 'libinput Accel Speed' -0.825
+fi
