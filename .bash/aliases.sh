@@ -41,3 +41,18 @@ function scp-all() {
         scp -r $REMOTE:"$(printf %q "$ENTRY")" $TO
     done < $FILES
 }
+
+function get-gzip-size() {
+    FILE=$1
+    gzip -9 -c "${FILE}" | wc -c | numfmt --to=iec-i --suffix=B --padding=10
+}
+
+function compare-gzip-size() {
+    FILE=$1
+
+    BEFORE=$(cat projects/ticc-homepage/public/main.2f8add2e419dd4408d13.css | wc -c | numfmt --to=iec-i --suffix=B --padding=10)
+    AFTER=$(get-gzip-size "${FILE}")
+
+    printf 'before: %-10s\n' "$BEFORE"
+    printf 'after:  %-10s\n' "$AFTER"
+}
