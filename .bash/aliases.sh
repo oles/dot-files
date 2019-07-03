@@ -50,7 +50,7 @@ function get-gzip-size() {
 function compare-gzip-size() {
     FILE=$1
 
-    BEFORE=$(cat projects/ticc-homepage/public/main.2f8add2e419dd4408d13.css | wc -c | numfmt --to=iec-i --suffix=B --padding=10)
+    BEFORE=$(cat "${FILE}" | wc -c | numfmt --to=iec-i --suffix=B --padding=10)
     AFTER=$(get-gzip-size "${FILE}")
 
     printf 'before: %-10s\n' "$BEFORE"
