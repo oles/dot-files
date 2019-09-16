@@ -8,6 +8,7 @@ alias gs='git status'
 alias gd='git diff'
 alias ga='git add'
 alias gaa='git add -A'
+alias gch='git checkout'
 function gc() { git commit -m "$*" ;}
 alias ll='LC_ALL=C ls -lAh --group-directories-first --color'
 alias grep='grep --color=auto --exclude-dir=node_modules'
