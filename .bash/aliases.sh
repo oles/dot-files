@@ -10,7 +10,7 @@ alias ga='git add'
 alias gaa='git add -A'
 alias gch='git checkout'
 function gc() { git commit -m "$*" ;}
-function gg() { git grep "$1" -- ':!package-lock.json' ;}
+function gg() { git grep $* -- ':!package-lock.json' ;}
 alias ll='LC_ALL=C ls -lAh --group-directories-first --color'
 alias grep='grep --color=auto --exclude-dir=node_modules'
 alias wtf='du -sch .[!.]* * | sort -h'
