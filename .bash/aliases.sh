@@ -29,31 +29,11 @@ function generate-password() {
 }
 
 
-function flac-to-320() {
-    FLACDIR=$1
-    whatmp3 --notorrent --nolog --nocue --320 "${FLACDIR}"
-}
-
-function flac-to-320-all() {
-    TARGET=$1
-    for FOLDER in $TARGET/* ; do
-        flac-to-320 "$FOLDER"
-    done
-}
-
-function scp-all() {
-    REMOTE=$1
-    FILES=$2
-    TO=$3
-    while read ENTRY; do
-        scp -r $REMOTE:"$(printf %q "$ENTRY")" $TO
-    done < $FILES
-}
-
 function get-gzip-size() {
     FILE=$1
     gzip -9 -c "${FILE}" | wc -c | numfmt --to=iec-i --suffix=B --padding=10
 }
+
 
 function compare-gzip-size() {
     FILE=$1
