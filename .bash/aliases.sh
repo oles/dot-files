@@ -46,7 +46,7 @@ function compare-gzip-size() {
 }
 
 
-function reload-firefox() {
+function RELOAD_FIREFOX() {
     for window in $(xdotool search --onlyvisible --name Firefox); do
         xdotool key --window "$window" CTRL+R;
     done
