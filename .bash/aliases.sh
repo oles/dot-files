@@ -44,3 +44,10 @@ function compare-gzip-size() {
     printf 'before: %-10s\n' "$BEFORE"
     printf 'after:  %-10s\n' "$AFTER"
 }
+
+
+function reload-firefox() {
+    for window in $(xdotool search --onlyvisible --name Firefox); do
+        xdotool key --window "$window" CTRL+R;
+    done
+}
