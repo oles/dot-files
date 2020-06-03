@@ -1,7 +1,7 @@
 #!/bin/bash
 
 
-RELOAD_SHORTCUT='CTRL+R'
+RELOAD_SHORTCUT='ctrl+r'
 WINDOW_NAME_MATCHES='Mozilla Firefox'
 
 
