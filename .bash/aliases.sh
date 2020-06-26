@@ -4,11 +4,12 @@ alias doup='sudo apt-get dist-upgrade'
 alias docl='sudo apt-get autoremove && sudo apt-get autoclean'
 alias push='git push origin master'
 alias pull='git pull origin master'
-alias gs='git status'
-alias gd='git diff'
 alias ga='git add'
 alias gaa='git add -A'
+alias gb='git branch'
 alias gch='git checkout'
+alias gd='git diff'
+alias gs='git status'
 function gc() { git commit -m "$*" ;}
 function gg() { git grep "$*" -- ':!package-lock.json' ;}
 function ggi() { git grep -i "$*" -- ':!package-lock.json' ;}
