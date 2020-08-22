@@ -5,7 +5,5 @@ HIDE_MOUSE_EXECUTABLE="x-hide-mouse"
 IS_ACTIVE=$(pgrep -x $HIDE_MOUSE_EXECUTABLE)
 
 if test $IS_ACTIVE; then
-    show-mouse
-else
-    hide-mouse
+    killall $HIDE_MOUSE_EXECUTABLE
 fi
