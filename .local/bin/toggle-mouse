@@ -1,0 +1,29 @@
+#!/bin/bash
+
+HIDE_MOUSE_EXECUTABLE="hide-mouse"
+
+FORCE_VISIBLE=$1
+
+IS_ACTIVE=$(pgrep -x $HIDE_MOUSE_EXECUTABLE)
+IS_INACTIVE=$([ -z "$IS_ACTIVE" ] && echo true)
+
+
+if [[ "$1" ]]; then
+    if test "$FORCE_VISIBLE" = "true"; then
+        if test "$IS_ACTIVE"; then
+            killall $HIDE_MOUSE_EXECUTABLE
+        fi
+    elif test "$FORCE_VISIBLE" = "false"; then
+        if test "$IS_INACTIVE"; then
+            $HIDE_MOUSE_EXECUTABLE &
+        fi
+    else
+        echo Pass either '"true"' or '"false"' to force the visibility
+    fi
+else
+    if test "$IS_ACTIVE"; then
+        killall $HIDE_MOUSE_EXECUTABLE
+    else
+        $HIDE_MOUSE_EXECUTABLE &
+    fi
+fi
