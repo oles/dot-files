@@ -21,34 +21,3 @@ alias syu='sudo pacman -Syu && pikaur -Su --aur'
 alias syc='sudo pacman -Rns $(pacman -Qdtq)'
 alias list-empty-folders='find . -type d -empty'
 alias cdd='cd "$(git rev-parse --show-toplevel)"'
-
-
-function generate-password() {
-    LENGTH=$1
-    PASSWORD=$(tr -dc A-Za-z0-9 < /dev/urandom | dd bs=${LENGTH:-30} count=1 2>/dev/null)
-    echo $PASSWORD
-}
-
-
-function get-gzip-size() {
-    FILE=$1
-    gzip -9 -c "${FILE}" | wc -c | numfmt --to=iec-i --suffix=B --padding=10
-}
-
-
-function compare-gzip-size() {
-    FILE=$1
-
-    BEFORE=$(cat "${FILE}" | wc -c | numfmt --to=iec-i --suffix=B --padding=10)
-    AFTER=$(get-gzip-size "${FILE}")
-
-    printf 'before: %-10s\n' "$BEFORE"
-    printf 'after:  %-10s\n' "$AFTER"
-}
-
-
-function RELOAD_FIREFOX() {
-    for window in $(xdotool search --onlyvisible --name Firefox); do
-        xdotool key --window "$window" CTRL+R;
-    done
-}

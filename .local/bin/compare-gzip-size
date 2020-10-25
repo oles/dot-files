@@ -1,0 +1,9 @@
+#!/bin/bash
+
+FILE=$1
+
+BEFORE=$(cat "${FILE}" | wc -c | numfmt --to=iec-i --suffix=B --padding=10)
+AFTER=$(get-gzip-size "${FILE}")
+
+printf 'before: %-10s\n' "$BEFORE"
+printf 'after:  %-10s\n' "$AFTER"
