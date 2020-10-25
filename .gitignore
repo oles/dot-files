@@ -17,6 +17,7 @@
 .local/*
 !.local/bin/
 !.local/sources/
+!.local/compiled/
 
 !.audacity-data/
 .audacity-data/*
