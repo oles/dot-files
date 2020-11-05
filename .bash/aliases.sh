@@ -13,6 +13,7 @@ alias gs='git status'
 function gc() { git commit -m "$*" ;}
 function gg() { git grep "$*" -- ':!package-lock.json' ;}
 function ggi() { git grep -i "$*" -- ':!package-lock.json' ;}
+function grao() { git remote add origin $1;}
 alias ll='LC_ALL=C ls -lAh --group-directories-first --color'
 alias grep='grep --color=auto --exclude-dir=node_modules'
 alias wtf='du -sch .[!.]* * | sort -h'
