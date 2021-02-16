@@ -3,3 +3,5 @@
     name = Ole Strøm
 [init]
 	defaultBranch = main
+[pull]
+	rebase = false
