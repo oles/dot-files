@@ -3,6 +3,6 @@ export HISTFILESIZE=
 export HISTSIZE=
 export HISTTIMEFORMAT="[%F %T] "
 export HISTCONTROL=ignoredups
-export HISTIGNORE="ls:fg:cdd:exit:ll:ll ..:jobs:cd:cd ..:htop:cd ../"
+export HISTIGNORE="ls:cdd:exit:ll:ll ..:cd:cd ..:cd ../"
 export HISTFILE=~/.cache/bash_history
 PROMPT_COMMAND="history -a; $PROMPT_COMMAND"
