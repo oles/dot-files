@@ -1,7 +1,11 @@
-stty stop undef # clears ctrl + s, so that search history works
+# clears ctrl + s, so that search history works
+stty stop undef
 
-bind '"\C-h": backward-kill-word' # ctrl + backspace = delete word backward
-bind '"\e[3;5~": kill-word' # ctrl + del = delete word
+# ctrl + backspace = delete word backward
+bind '"\C-h": backward-kill-word'
+
+# ctrl + del = delete word
+bind '"\e[3;5~": kill-word'
 
 # ctrl + l = reset instead of clear
 # to avoid "cannot find keymap for command" errors,
@@ -10,4 +14,9 @@ bind '"\e[3;5~": kill-word' # ctrl + del = delete word
 bind -x '"\201": printf "\ec"'
 bind '"\C-l": "\201"'
 
-for i in - {0..9} ; do bind -r '\e'$i; done # clears readline arguments keybindings
+# clears readline arguments keybindings
+for i in - {0..9} ; do bind -r '\e'$i; done
+
+# clears page up and down for history navigation
+bind -r '\e[5~'
+bind -r '\e[6~'
