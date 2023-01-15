@@ -9,18 +9,16 @@ alias gaa='git add -A'
 alias gb='git branch'
 alias gch='git checkout'
 alias gd='git diff'
-alias gdc='git diff --cached'
 alias gs='git status'
 alias gl='git log'
 function gc() { git commit -m "$*" ;}
 function gg() { git grep "$*" -- ':!package-lock.json' ;}
 function ggi() { git grep -i "$*" -- ':!package-lock.json' ;}
-function grao() { git remote add origin $1;}
 alias ll='LC_ALL=C ls -lAh --group-directories-first --color'
 alias grep='grep --color=auto --exclude-dir=node_modules'
 alias wtf='du -sch .[!.]* * | sort -h'
+alias syc='sudo pacman -Qdtq && sudo pacman -Rns $(pacman -Qdtq)'
 alias pacman='sudo pacman'
 alias syu='sudo pacman -Syu && pikaur -Su --aur'
-alias syc='sudo pacman -Rns $(pacman -Qdtq)'
 alias list-empty-folders='find . -type d -empty'
 alias cdd='cd "$(git rev-parse --show-toplevel)"'
