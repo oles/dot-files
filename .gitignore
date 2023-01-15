@@ -1,24 +1,14 @@
 /*
 
-
 !.gitignore
-!.gitconfig
 
 !.profile
 !.bashrc
 !.bash_login
 !.bash/
 
-!.ssh/
-.ssh/*
-!.ssh/config
-
 !.local/
 .local/*
 !.local/bin/
 !.local/sources/
 !.local/compiled/
-
-!.audacity-data/
-.audacity-data/*
-!.audacity-data/audacity.cfg
