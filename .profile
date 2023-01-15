@@ -15,6 +15,10 @@ export QT_AUTO_SCREEN_SCALE_FACTOR=0
 PATH="$HOME/.local/bin:$PATH"
 
 
+
+PATH="$HOME/.deno/bin:$PATH"
+
+
 # makes `npm install --global` install for current user
 PATH="$HOME/.node_modules/bin:$PATH"
 export npm_config_prefix=~/.node_modules
