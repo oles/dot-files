@@ -1,5 +1,23 @@
 #!/bin/bash
 
+# DEPRECATED
+# - slap this in /etc/X11/xorg.conf.d/50-mouse-acceleration.conf instead
+
+# Section "InputClass"
+#   Identifier "Logitech G400"
+#   MatchVendor "Logitech"
+#   MatchProduct "G400"
+#   Option "AccelProfile" "flat"
+# EndSection
+# Section "InputClass"
+#   Identifier "Logitech MX518"
+#   MatchVendor "Logitech"
+#   MatchProduct "MX518"
+#   Option "AccelProfile" "flat"
+# EndSection
+
+
+
 # tries to match Windows 7-10 pointer speed, when configured with these settings:
 # - Select a pointer speed: middle setting / 6th step of the 11 steps
 # - Enhance pointer precision: disabled
