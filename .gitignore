@@ -9,6 +9,10 @@
 
 !.local/
 .local/*
+
 !.local/bin/
+.local/bin/yarn
+.local/bin/yarnpkg
+
 !.local/sources/
 !.local/compiled/
