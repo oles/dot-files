@@ -13,3 +13,7 @@ PATH="$HOME/.local/bin:$PATH"
 
 # adds installed stuff from deno to $PATH
 PATH="$HOME/.deno/bin:$PATH"
+
+
+# adds installed stuff from yarn to $PATH
+PATH="$HOME/.yarn/bin:$PATH"
