@@ -22,3 +22,12 @@ PATH="$HOME/.node_modules/bin:$PATH"
 PATH="$HOME/.deno/bin:$PATH"
 
 
+# adds installed stuff from nix to $PATH
+PATH="$HOME/.nix-profile/bin:$PATH"
+
+# loads nix stuff (like bash completions)
+export XDG_DATA_DIRS=$HOME/.nix-profile/share:$XDG_DATA_DIRS
+
+# fixes locale issues
+# https://nixos.wiki/wiki/Locales
+export LOCALE_ARCHIVE=/usr/lib/locale/locale-archive
