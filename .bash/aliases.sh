@@ -1,7 +1,4 @@
 alias sudo='sudo '
-alias doit='sudo apt-get update && sudo apt-get upgrade'
-alias doup='sudo apt-get dist-upgrade'
-alias docl='sudo apt-get autoremove && sudo apt-get autoclean'
 alias gp='git pull'
 alias gpp='git push'
 alias ga='git add'
