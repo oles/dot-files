@@ -15,7 +15,7 @@ function ggi() { git grep -i "$*" -- ':!package-lock.json' ;}
 alias ll='LC_ALL=C ls -lAh --group-directories-first --color'
 alias grep='grep --color=auto --exclude-dir=node_modules'
 alias wtf='du -sch .[!.]* * | sort -h'
-alias syu='sudo pacman -Syu && yay -Su --aur --ignore js78 --ignore pdf-decrypt'
+alias syu='sudo pacman -Syu && paru -Sua'
 alias syc='sudo pacman -Qdtq && sudo pacman -Rns $(pacman -Qdtq)'
 alias pacman='sudo pacman'
 alias list-empty-folders='find . -type d -empty'
