@@ -6,6 +6,8 @@ export LC_ALL="en_US.UTF-8"
 export EDITOR=nano
 
 
+# disables funding messages for composer
+export COMPOSER_FUND=0
 
 # makes `npm install --global / npm install -g` install for current user
 export npm_config_prefix=~/.node_modules
