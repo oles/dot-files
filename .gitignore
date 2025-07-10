@@ -7,6 +7,8 @@
 !.bash_login
 !.bash/
 
+!.nanorc
+
 !.Xmodmap
 
 !.local/
