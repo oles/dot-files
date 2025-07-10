@@ -5,6 +5,9 @@ export LC_ALL="en_US.UTF-8"
 # sets nano as the default editor
 export EDITOR=nano
 
+# adds syntax highlighting to less
+export LESSOPEN="| /usr/bin/src-hilite-lesspipe.sh %s"
+export LESS=' -R '
 
 # disables funding messages for composer
 export COMPOSER_FUND=0
