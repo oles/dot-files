@@ -1,3 +1,4 @@
 include "/usr/share/nano/*.nanorc"
 
+# alt+; = comment
 bind M-; comment main
