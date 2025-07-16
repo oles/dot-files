@@ -2,3 +2,6 @@ include "/usr/share/nano/*.nanorc"
 
 # alt+; = comment
 bind M-; comment main
+
+# ctrl+z = suspend aka minimize
+bind ^Z suspend main
