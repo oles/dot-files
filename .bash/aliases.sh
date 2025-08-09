@@ -12,7 +12,7 @@ alias gl='git log'
 function gc() { git commit -m "$*" ;}
 function gg() { git grep "$*" -- ':!package-lock.json' ;}
 function ggi() { git grep -i "$*" -- ':!package-lock.json' ;}
-alias ll='LC_ALL=C ls -lAh --group-directories-first --color'
+alias ll='ls -lAh --group-directories-first --color'
 alias grep='grep --color=auto --exclude-dir=node_modules'
 alias wtf='du -sch .[!.]* * | sort -h'
 alias syu='sudo pacman -Syu && paru -Sua'
