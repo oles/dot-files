@@ -16,7 +16,3 @@ bind '"\C-l": "\201"'
 
 # clears readline arguments keybindings
 for i in - {0..9} ; do bind -r '\e'$i; done
-
-# clears page up and down for history navigation
-bind -r '\e[5~'
-bind -r '\e[6~'
