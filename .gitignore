@@ -14,8 +14,5 @@
 !.local/
 .local/*
 
-!.local/bin/
-.local/bin/yarn
-
 !.local/sources/
 !.local/compiled/
