@@ -14,5 +14,8 @@
 !.local/
 .local/*
 
+!.local/bin/compare-gzip-size
+!.local/bin/get-gzip-size
+
 !.local/sources/
 !.local/compiled/

@@ -1,0 +1,5 @@
+#!/bin/bash
+
+FILE=$1
+
+gzip -9 -c "${FILE}" | wc -c | numfmt --to=iec-i --suffix=B --padding=10
