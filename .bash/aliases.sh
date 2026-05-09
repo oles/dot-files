@@ -1,4 +1,6 @@
+# trick to enable aliases with sudo
 alias sudo='sudo '
+
 alias gp='git pull'
 alias gpp='git push'
 alias ga='git add'
