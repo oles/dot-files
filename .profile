@@ -21,5 +21,5 @@ PATH="$HOME/.local/bin:$PATH"
 # adds installed stuff from npm to $PATH
 PATH="$HOME/.node_modules/bin:$PATH"
 
-# adds installed stuff from deno to $PATH
-PATH="$HOME/.deno/bin:$PATH"
+# adds deno stuff to the env
+. "$HOME/.deno/env"
