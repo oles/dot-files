@@ -18,8 +18,8 @@ export npm_config_prefix=~/.node_modules
 # adds local bins to $PATH
 PATH="$HOME/.local/bin:$PATH"
 
-# adds installed stuff from npm to $PATH
+# adds globally installed packages from npm to $PATH
 PATH="$HOME/.node_modules/bin:$PATH"
 
-# adds deno stuff to the env
-. "$HOME/.deno/env"
+# adds globally installed packages from deno to $PATH
+PATH="$HOME/.deno/bin:$PATH"
