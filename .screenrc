@@ -1,4 +1,4 @@
 startup_message off
 
-defscrollback 100000
+defscrollback 1000000
 termcapinfo xterm* ti@:te@
