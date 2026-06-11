@@ -3,6 +3,7 @@ alias sudo='sudo '
 
 alias gp='git pull'
 alias gpp='git push'
+alias gfp='git push --force-with-lease'
 alias ga='git add'
 alias gaa='git add -A'
 alias gb='git branch'
