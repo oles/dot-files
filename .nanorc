@@ -21,8 +21,8 @@ bind ^Z suspend main
 # ctrl+c = copy
 bind ^C copy main
 
-# ctrl+v = paste
-bind ^V paste main
+# ctrl+i = paste
+bind ^I paste main
 
 # ctrl+backspace = delete word backward
 bind ^H chopwordleft main
