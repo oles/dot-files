@@ -12,6 +12,9 @@ export LESS=' -R '
 # disables funding messages for composer
 export COMPOSER_FUND=0
 
+# disables telemetry for things supporting that
+export DISABLE_TELEMETRY=1
+
 # makes `npm install --global / npm install -g` install for current user
 export npm_config_prefix=~/.node_modules
 
